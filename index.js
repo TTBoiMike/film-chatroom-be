@@ -8,7 +8,7 @@ const mongoose = require('mongoose')
 // schema
 const {Film} = require('./models/film')
 
-const port = 3001
+const port = process.env.PORT || 3001
 const app = express();
 
 app.use(cors())
